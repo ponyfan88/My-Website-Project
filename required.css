@@ -29,10 +29,6 @@ table, th, td, button {
     color:yellow;
 }
 
-audio {
-    border: 1px solid;
-}
-
 img {
     image-rendering: pixelated;
     border: 10px;
