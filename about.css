@@ -1,0 +1,220 @@
+/*#region font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+body {
+    font-family: 'Heebo', 'Roboto', sans-serif;
+    color: #E1DCDC;
+    margin:0;
+    padding:0;
+}
+
+/*#endregion font*/
+
+/*#region background*/
+
+html, body {
+    background-color: #313131;
+}
+
+/*#endregion background*/
+
+/*#region remove scrollbar*/
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/*#endregion remove scrollbar*/
+
+/*#region smooth scrolling*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*#endregion smooth scrolling*/
+
+/*#region fade in on load*/
+
+* {
+    animation: entrance 750ms; 
+}
+
+@keyframes entrance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*#endregion fade in on load*/
+
+/*#region pretty links*/
+
+a {
+    color: #E1DCDC;
+    text-decoration: none;
+    transition: color 400ms;
+}
+
+a:hover {
+    color:white;
+}
+
+/*#endregion pretty links*/
+
+/*#region back button*/
+
+.backbutton {
+    left: 0.5rem;
+    position: absolute;
+    transition: all 1s;
+}
+
+.backbutton:hover {
+    transform: scale(1.5);
+    left: 2rem;
+}
+
+.backbutton > a {
+    line-height:0;
+    margin:0;
+    padding:0;
+}
+
+/*#endregion back button*/
+
+/*#region document about page*/
+
+.about {
+    position: absolute;
+    top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.about > * {
+    margin: auto;
+}
+
+.about > div {
+    height: 50vh;
+    aspect-ratio: 1;
+    background-image: url("ASSETS/space.jpg");
+    text-align: center;
+}
+
+.about > div > img {
+    height: 50vh;
+    background-image: url("ASSETS/space.jpg");
+}
+
+.about > h1 {
+    font-size: 10rem;
+    line-height: 10rem;
+}
+
+.about > h2 {
+    line-height: 0;
+}
+
+.about > h3 {
+    font-size: 5rem;
+    margin-top: 5rem;
+    line-height: 3rem;
+}
+
+.about > p.story {
+    width: 75%;
+}
+
+.about > p.story > br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 100%;
+}
+
+.about > p.script {
+    width: 50%;
+    
+    word-wrap: break-word;      /* IE 5.5-7 */
+    white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+    white-space: pre-wrap;      /* current browsers */
+}
+
+.about > i.arrow {
+    margin-top: 5rem;
+}
+
+
+
+/*#endregion document about page*/
+
+/*#region arrows*/
+
+.arrow {
+    border: solid #E1DCDC;
+    border-width: 0 1rem 1rem 0;
+    display: inline-block;
+    padding: 3rem;
+}
+
+.smallarrow {
+    border: solid #E1DCDC;
+    border-width: 0 0.25rem 0.25rem 0;
+    display: inline-block;
+    padding: 0.5rem;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+  
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/*#endregion arrows*/
+
+/*#region scroll to top arrow*/
+
+#scrollToTop {
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+    z-index: 1;
+}
+
+/*#endregion scroll to top arrow*/
+
+
+/*
+
+##===============================##
+|| guru meditation; keep it calm ||
+##===============================##
+
+*/

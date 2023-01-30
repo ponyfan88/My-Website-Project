@@ -1,0 +1,142 @@
+/*#region font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+body {
+    font-family: 'Heebo', 'Roboto', sans-serif;
+    color: #E1DCDC;
+}
+
+/*#endregion font*/
+
+/*#region background*/
+
+html, body {
+    background-color: #313131;
+
+    overflow: hidden;
+}
+
+/*#endregion background*/
+
+/*#region fade in on load*/
+
+* {
+    animation: entrance 750ms; 
+}
+
+@keyframes entrance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*#endregion fade in on load*/
+
+/*#region navigation formatting*/
+
+* {
+    user-select: none;
+}
+
+nav {
+    position: fixed;
+    transform: translateY(50%);
+    bottom: 50%;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: normal;
+
+    font-size: 300%;
+}
+
+nav > div {
+    text-align: center;
+
+   /* flex-basis: 33%;
+    flex-grow: 0;
+    flex-shrink: 0;*/
+
+    transition: 400ms;
+
+    height: 0%;
+
+    line-height: 0;
+}
+
+nav > div:hover {
+    font-size: 200%;
+}
+
+/*#endregion navigation formatting*/
+
+/*#region animations*/
+
+.shake {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.25s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: 1;
+}
+
+.squish {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: squish 0.25s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    /* thank you w3schools! :3 */
+    0% { transform: translate(0.1rem, 0.1rem) rotate(0deg); }
+    10% { transform: translate(-0.1rem, -0.2rem) rotate(-3deg); }
+    20% { transform: translate(-0.3rem, 0rem) rotate(3deg); }
+    30% { transform: translate(0.3rem, 0.2rem) rotate(0deg); }
+    40% { transform: translate(0.1rem, -0.1rem) rotate(3deg); }
+    50% { transform: translate(-0.1rem, 0.2rem) rotate(-3deg); }
+    60% { transform: translate(-0.3rem, 0.1rem) rotate(0deg); }
+    70% { transform: translate(0.3rem, 0.1rem) rotate(-3deg); }
+    80% { transform: translate(-0.1rem, -0.1rem) rotate(3deg); }
+    90% { transform: translate(0.1rem, 0.2rem) rotate(0deg); }
+    100% { transform: translate(0.1rem, -0.2rem) rotate(-3deg); }
+}
+
+@keyframes squish {
+    0% { transform:scale(1.05,0.9); }
+    100% { transform:scale(1,1); }
+}
+
+/*#endregion animations*/
+
+#clickytext {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+a { color: #E1DCDC; transition: color 400ms;}
+a:hover { color:white; }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+/* Start https://www.cursors-4u.com  * {cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur15.ani), url(https://cur.cursors-4u.net/cursors/cur-1/cur15.png), auto !important;} /* End https://www.cursors-4u.com */
+
+#grow {
+    line-height: 0;
+}
+
+#clickytext {
+    margin-bottom: 0.5rem;
+}

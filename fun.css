@@ -1,0 +1,139 @@
+/*#region font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+body {
+    font-family: 'Heebo', 'Roboto', sans-serif;
+    color: #E1DCDC;
+}
+
+/*#endregion font*/
+
+/*#region background*/
+
+html, body {
+    background-color: #313131;
+    overflow-x: hidden;
+}
+
+/*#endregion background*/
+
+/*#region fade in on load*/
+
+* {
+    animation: entrance 750ms; 
+}
+
+@keyframes entrance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*#endregion fade in on load*/
+
+/*#region remove scrollbar*/
+
+* {
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Chrome */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/*#endregion remove scrollbar*/
+
+/*#region snake game formatting*/
+  
+#container > div > div {
+    margin: 0.8vh;
+    padding: 0.8vh;
+    border-radius: 1vh;
+    background-color: #FFFFFF1F;
+    width: 5vh;
+    aspect-ratio: 1;
+    display:inline-block;
+    transition: all 0.1s;
+}
+  
+#container {
+    top: 2rem;
+    border-radius: 1vh;
+    position:absolute;
+    background-color: #FFFFFF1F;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    font-size: 0; /* remove ugly bottom margin */
+    line-height: 0;
+}
+  
+#container > div > div.snake {
+    background-color: LightBlue;
+}
+  
+#container > div > div.food {
+    background-color: LightCoral;
+}
+  
+#container > div > div.super {
+    background-color: LightBlue;
+    margin: 0vh;
+    padding: 1.6vh;
+}
+  
+#container > div > div.test {
+    background-color: magenta;
+}
+
+/*#endregion snake game formatting*/
+
+/*#region pretty links*/
+
+a {
+    color: #E1DCDC;
+    text-decoration: none;
+    transition: color 400ms;
+}
+
+a:hover {
+    color:white;
+}
+
+/*#endregion pretty links*/
+
+/*#region back button*/
+
+.backbutton {
+    left: 0.5rem;
+    position: absolute;
+    transition: all 1s;
+}
+
+.backbutton:hover {
+    transform: scale(1.5);
+    left: 2rem;
+}
+
+.backbutton > a {
+    line-height:0;
+    margin:0;
+    padding:0;
+}
+
+/*#endregion back button*/
+
+
+
+/*
+
+##===============================##
+|| guru meditation; keep it calm ||
+##===============================##
+
+*/
