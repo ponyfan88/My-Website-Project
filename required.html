@@ -11,30 +11,39 @@
     </title>
   </head>
   <body>
+    <button onclick="window.location.href='./index.html'">back to main page</button>
+    <br>
+    <br>
     <button id="loadbutton" onclick="show()">clcik me to load page!</button>
     <div id="hideme">
       <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/games/gam-5/gam416.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2009/02/17/halo-3.html" target="_blank" title="Halo 3"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Halo 3" style="position:absolute; top: 0px; right: 0px;" /></a>
-      <audio controls src="ASSETS/epic music.mp3" id="epic music"></audio>
+      <audio src="ASSETS/epic music.mp3" id="epic music"></audio>
+      <div> 
+        <button onclick="document.getElementById('epic music').play()">Play</button> 
+        <button onclick="document.getElementById('epic music').pause()">Pause</button> 
+        <button onclick="document.getElementById('epic music').volume += 0.1">Vol +</button> 
+        <button onclick="document.getElementById('epic music').volume -= 0.1">Vol -</button> 
+      </div>
       <p>
-        &lt;p&gt;make sure to use heaphones for this epic music!&lt;/p
+        &lt;p&gt;make sure to use heaphones for this<u> epic musi</u>c!&lt;/p
       </p>
       <div class="stars">
         <img class="scroll-left" src="ASSETS/welcome.gif">
       </div>
       <p>
-        welcome to my awesomee website!!1
+        welcome to my awesome website!!1
       </p>
-        <ul>
+      <ul>
         <li><p</li>
-        <li>,my dog</li>
-        <li>funny pictures!</li>
+        <li><a href="#MYDOG">,my dog</a></li>
+        <li><a href="#MEMES">funny pictures!</a></li>
       </ul>
       &lt;\ul&gt;
 
       <table>
           <tr>
               <th>
-                  <h1>butter dog - dog with the butter on it</h1>
+                  <h1 id="MYDOG">butter dog - dog with the butter on it</h1>
               </th>
           </tr>
           <tr>
@@ -54,7 +63,7 @@
           </tr>
           <tr>
               <th>
-                  <h1>memes!</h1>
+                  <h1 id="MEMES">memes!</h1>
               </th>
           </tr>
           <tr>

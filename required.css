@@ -2,8 +2,7 @@
     font-weight: bolder;
 }
 
-body,
-html {
+body, html {
     background: linear-gradient(
         90deg,
         rgba(255, 0, 0, 1) 0%,
@@ -20,12 +19,28 @@ html {
     );
 }
 
+#loadbutton {
+    font-size:5vw;
+}
+
+table, th, td, button {
+    background-image: url("ASSETS/bg_stars.gif");
+    border: 1px solid;
+    color:yellow;
+}
+
+audio {
+    border: 1px solid;
+}
+
 img {
     image-rendering: pixelated;
     border: 10px;
 }
 
 .stars {
+    border: 1px solid;
+    color:yellow;
     background-image: url("ASSETS/bg_stars.gif");
     overflow-x: hidden;
 }
